@@ -1,14 +1,36 @@
 <template>
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
+  </div> -->
+  <Navbar/>
   <router-view/>
 </template>
 
+<script>
+import Navbar from '@/components/Navbar.vue'
+export default {
+  components: {
+    Navbar,
+    
+  },
+}
+</script>
 <style>
+@font-face {
+  font-family: "Abadi";
+  src: local("Abadi"),
+   url(./fonts/Abadi/ABALC.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  src: local("Rajdhani"),
+   url(./fonts/Rajdhani/Rajdhani-Light.ttf) format("truetype");
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Rajdhani, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
