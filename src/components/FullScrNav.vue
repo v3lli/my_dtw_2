@@ -1,6 +1,6 @@
 <template>
-<div class="main-header d-flex justify-content-between align-items-center">
-    <div class="brand-name"> Emeka Onyejesi </div>
+<div class="container">
+    <div class="brand-name"> Home (Uncategorized) </div>
     <nav class="nav">
         <a class="nav-link active" aria-current="page" href="#">Active</a>
         <a class="nav-link" href="#">Link</a>
