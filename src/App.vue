@@ -1,9 +1,12 @@
 <template>
-  <div class= " d-flex justify-self-start mx-5 my-5" v-if="mobileView">
-    <fa class="hamburger fa-lg" icon = "bars"/>
+  <!-- <div class= " d-flex justify-self-start mx-5 my-5" v-if="mobileView"> -->
+  <div class= "w-100 d-flex justify-content-between py-5 px-5">
+    <div class="brand-name"> Emeka Onyejesi </div>
+    <div>
+  <Navbar :toNav="!showNav" v-if="showNav"/>
+  <fa v-else @click="toggleNav" class="hamburger fa-lg" icon = "bars"/>
   </div>
-  <MobileNav/>
-  <Navbar v-if="!mobileView"/>
+  </div>
   <!-- <HelloWorld/> -->
   <router-view/>
 </template>
@@ -15,12 +18,16 @@ export default {
     return{
       mobileView: false,
       showNav: false 
+      
     }
   },
   methods:{
     viewhandler(){
       this.mobileView = window.innerWidth <= 990;
-      
+      },
+
+    toggleNav: function () {
+      this.showNav = !this.showNav
     }
   },
   components: {
@@ -54,6 +61,13 @@ export default {
   color: #2c3e50;
 }
 
+#fa-lg{
+  z-index: 3;
+  color: blue;
+}
+#hamburger_close{
+  color:lightpink;
+}
 /* #nav a {
   font-weight: bold;
   color: #2c3e50;
