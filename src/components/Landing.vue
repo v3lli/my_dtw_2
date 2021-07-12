@@ -1,6 +1,5 @@
 <template>
-  <div class="landing">
-    
+  <div :style = "bgImg" class="landing">
   </div>
 </template>
 
@@ -9,6 +8,16 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data: function() {
+      return{
+          bgImg: 
+          {
+              backgroundImage:"url("+require("../assets/Images/IMG_3769.gif")+")",
+              backgroundRepeat:"no-repeat",
+              backgroundSize:"cover"
+        },
+      }
   }
 }
 </script>
@@ -32,5 +41,10 @@ a {
 
 #hello{
   background-color: black;
+}
+
+.landing{
+    height: 100vh;
+    width: 100vh;
 }
 </style>

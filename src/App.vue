@@ -1,37 +1,26 @@
 <template>
-  <!-- <div class= " d-flex justify-self-start mx-5 my-5" v-if="mobileView"> -->
-  <div class= "w-100 d-flex justify-content-between py-5 px-5">
-    <div class="brand-name"> Emeka Onyejesi </div>
-    <div>
-  <Navbar :toNav="!showNav" v-if="showNav"/>
-  <fa v-else @click="toggleNav" class="hamburger fa-lg" icon = "bars"/>
+  <div>
+    <FullScrNav class="nav" :toNav="!showNav"/>
   </div>
-  </div>
-  <!-- <HelloWorld/> -->
   <router-view/>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
+import FullScrNav from '@/components/FullScrNav.vue'
+
 export default {
   data: () => {
     return{
       mobileView: false,
-      showNav: false 
-      
     }
   },
   methods:{
     viewhandler(){
       this.mobileView = window.innerWidth <= 990;
       },
-
-    toggleNav: function () {
-      this.showNav = !this.showNav
-    }
   },
   components: {
-    Navbar
+    FullScrNav,
   },
   created(){
     this.viewhandler();
@@ -61,19 +50,18 @@ export default {
   color: #2c3e50;
 }
 
-#fa-lg{
-  z-index: 3;
-  color: blue;
-}
-#hamburger_close{
-  color:lightpink;
-}
 /* #nav a {
   font-weight: bold;
   color: #2c3e50;
 } */
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.main-header{
+  width: 100%;
 }
+.nav{
+  z-index: 5;
+  top: 0;
+}
+/* #nav a.router-link-exact-active {
+  color: #42b983;
+} */
 </style>

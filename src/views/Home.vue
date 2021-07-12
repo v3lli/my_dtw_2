@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <Landing class="w-100"/>
+  <ImageGrid/>
 </template>
-
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Landing from '@/components/Landing.vue'
+import ImageGrid from '@/components/ImageGrid.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Landing,
+    ImageGrid
   }
 }
 </script>
+
+<style scoped>
+.banner{
+  display: absolute;
+  top: -10;
+  z-index: -1;
+}
+</style>
