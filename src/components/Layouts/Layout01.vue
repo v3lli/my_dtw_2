@@ -1,10 +1,10 @@
 <template>
     <div class="grid_1">
-        <GridItemA/>
-        <GridItemB/>
-        <GridItemC/>
-        <GridItemD/>
-        <GridItemE/>
+        <GridItemA :article="grid[0]"/>
+        <GridItemB :article="grid[1]"/>
+        <GridItemC :article="grid[2]"/>
+        <GridItemD :article="grid[3]"/>
+        <GridItemE :article="grid[4]"/>
     </div>  
 </template>
 
@@ -23,17 +23,23 @@ export default {
             GridItemD, 
             GridItemE
         },
-          
+    props: ["grid"],
+    mounted(){
+        // console.log(this.grid)
+        }
 };
 </script>
 
 <style scoped>
     .grid_1{
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(8, 5vw);
-        grid-gap:15px;
-
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        /* grid-template-columns: repeat(8, 1fr); */
+        /* grid-template-rows: repeat(8, 5vw); */
+        grid-gap:1.5rem;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-auto-flow: dense;
     }
-
 </style>

@@ -1,25 +1,21 @@
 <template>
   <Landing class="w-100"/>
-  <ImageGrid/>
+  <Page25 class="w-100"/>
 </template>
 <script>
 // @ is an alias to /src
 import Landing from '@/components/Landing.vue'
-import ImageGrid from '@/components/ImageGrid.vue'
+import Page25 from '@/components/Page25.vue'
 
 export default {
   name: 'Home',
+  data(){
+  },
   components: {
     Landing,
-    ImageGrid
+    Page25
   }
 }
 </script>
-
 <style scoped>
-.banner{
-  display: absolute;
-  top: -10;
-  z-index: -1;
-}
 </style>

@@ -1,12 +1,12 @@
 <template>
     <figure class="grid_item_12">
-        <img class="grid_img">
+        <img class="grid_img" :src = article.media_url>
     </figure>
 </template>
 
 <script>
 export default {
-    
+    props: ["article"]
 };
 </script>
 
@@ -21,5 +21,7 @@ export default {
         grid-column-end: 4;
         grid-row-start: 4;
         grid-column-end: 9;
+        width: 100%;
+        height: 100%;
     }
 </style>

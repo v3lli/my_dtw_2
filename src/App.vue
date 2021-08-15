@@ -48,6 +48,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  overflow-x: hidden;
 }
 
 /* #nav a {
@@ -64,4 +65,14 @@ export default {
 /* #nav a.router-link-exact-active {
   color: #42b983;
 } */
+
+*,
+*::before,
+*::after{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 </style>

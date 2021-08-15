@@ -1,5 +1,5 @@
 <template>
-  <div :style = "bgImg" class="landing">
+  <div :style = "bgImg" class="landing w-100">
   </div>
 </template>
 
@@ -15,8 +15,10 @@ export default {
           {
               backgroundImage:"url("+require("../assets/Images/IMG_3769.gif")+")",
               backgroundRepeat:"no-repeat",
-              backgroundSize:"cover"
-        },
+              backgroundSize:"cover",
+              backgroundAttachment:"fixed",
+              backgroundPosition:"center",
+          },
       }
   }
 }
@@ -45,6 +47,6 @@ a {
 
 .landing{
     height: 100vh;
-    width: 100vh;
+    width: 100%;
 }
 </style>

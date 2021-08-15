@@ -1,6 +1,8 @@
 <template>
-    <div class="main-header justify-content-between align-items-center"> 
-        <div class="brand-name"><strong> Emeka Onyejesi ™ </strong></div>
+    <div class="main-header justify-content-between align-items-center">
+        <div class="brand-name">
+            <strong> Emeka Onyejesi ™ </strong>
+        </div>
         <nav id="menu" class="nav align-items-center text-center justify-content-center" :class="showNav ? 'show' : '' ">
             <ul>
                 <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -9,7 +11,7 @@
                 <a class="nav-link" href="#">Diary</a>
                 <a class="nav-link" href="#">Contact</a>
             </ul>
-            <fa  v-if="!showNav" @click="toggleNav" class="cross fa-color fa-lg" icon = "times"/>
+            <fa v-if="!showNav" @click="toggleNav" class="cross fa-color fa-lg" icon = "times"/>
         </nav>
         <fa v-if="showNav" @click="toggleNav" class="hamburger fa-lg" icon = "bars"/>
     </div>
@@ -22,7 +24,6 @@
      data: () => {
     return{
       showNav: true 
-      
     }
   },
   methods:{
