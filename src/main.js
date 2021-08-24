@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-// import AOS from "aos";
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 // import * as VueAos from 'vue-aos'
