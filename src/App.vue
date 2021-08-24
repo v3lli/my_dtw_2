@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import FullScrNav from '@/components/FullScrNav.vue'
+import FullScrNav from '@/components/FullScrNav.vue';
 
 export default {
   data: () => {
@@ -25,6 +25,7 @@ export default {
   created(){
     this.viewhandler();
     window.addEventListener('resize', this.viewhandler);
+
   }
 };
 </script>
