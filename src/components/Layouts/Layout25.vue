@@ -1,19 +1,14 @@
 <template>
     <div class="gallery w-100">
-		
-        <figure class="img" data-aos="fade-in" v-for="(post, index) in posts" :key="index">
+        <figure class="img" v-for="(post, index) in posts" :key="index">
             <img :src="post.media_url">
         </figure>
     </div>
 </template>
 
 <script>
-// import GridItem from '../GridItems/GridItem.vue'
+// import gsap from 'gsap'
 export default{
-    components:{
-        //  GridItem
-		// AOS,
-    },
     props: ["posts"],
 }
 </script>
@@ -22,18 +17,14 @@ export default{
 .gallery{
     position: relative;
     height: auto;
-    width: 90%;
     margin: auto;
     padding: 45px 0;
     display: grid;
     grid-template-columns:  auto auto auto auto;
-    
 }
 
 .gallery .img{
 	position: relative;
-	height: 100%;
-	width: 100%;
 	overflow: hidden;
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9 );
 	border-radius: 2px;
@@ -87,5 +78,6 @@ export default{
 .gallery .img:hover img{
 	filter: brightness(1) grayscale(0);
 }
+
 
 </style>

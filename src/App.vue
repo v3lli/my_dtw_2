@@ -1,12 +1,13 @@
 <template>
   <div>
-    <FullScrNav class="nav" :toNav="!showNav"/>
+    <FullScrNav2 class="nav" :toNav="!showNav"/>
   </div>
   <router-view/>
 </template>
 
 <script>
-import FullScrNav from '@/components/FullScrNav.vue';
+import FullScrNav2 from '@/components/FullScrNav2.vue';
+//import gsap from 'gsap'
 
 export default {
   data: () => {
@@ -20,7 +21,7 @@ export default {
       },
   },
   components: {
-    FullScrNav,
+    FullScrNav2,
   },
   created(){
     this.viewhandler();
@@ -50,6 +51,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   overflow-x: hidden;
+  background-color: #1d1d1d;
 }
 
 /* #nav a {

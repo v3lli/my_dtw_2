@@ -12,7 +12,7 @@
 <script>
 import axios from 'axios'
 import Layout25 from './Layouts/Layout25.vue'
-// import ImageGridSingle from './ImageGridSingle.vue';
+
 export default {
     computed:{
         getAllPost() {
@@ -105,7 +105,10 @@ export default {
 	grid-auto-flow: dense;
     /* z-index: 90; */
 }
-
+.banner, .banner .gallery, .banner .feed{
+    background-color: transparent;
+    color: whitesmoke;
+}
 
 
 </style>

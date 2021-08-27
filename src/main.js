@@ -10,9 +10,8 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import gsap from 'gsap'
 
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 // import * as VueAos from 'vue-aos'
 
@@ -29,7 +28,6 @@ library.add(fas)
 // }) 
 
 
-createApp(App).use(store).use(router).use(VueAxios, axios).component('fa', FontAwesomeIcon).mount('#app')
+createApp(App).use(store).use(router).use(VueAxios, axios).use(gsap).component('fa', FontAwesomeIcon).mount('#app')
 
-// createApp.AOS = new AOS.init({ disable: "phone" })
 

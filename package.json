@@ -16,6 +16,8 @@
     "bootstrap": "^5.0.2",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
+    "gasp": "0.0.2",
+    "gsap": "^3.7.1",
     "jquery": "^3.6.0",
     "popper": "^1.0.1",
     "vue": "^3.0.0",

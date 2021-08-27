@@ -113,7 +113,4 @@ nav {
 .hide{
     top: 0;
 }
- .line{
-
- }
 </style>
