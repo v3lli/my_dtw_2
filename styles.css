@@ -1,0 +1,13 @@
+
+
+ul li img{
+    height: 80vh; 
+}
+
+ul li {
+    display: inline;
+}
+
+img{
+    height: 100%;
+}
