@@ -38,7 +38,8 @@ export default {
             }
         ],
         posts:null,
-        current:"https://graph.instagram.com/v11.0/5871478969560922/media?fields=caption,id,media_type,media_url&access_token=IGQVJWVFlLbkdUWkVGMklFZA2hWNTJMdXFfRk40a0NhUXVfaXR4ZAnVZAaHo5YURYUWtKMFA0dzJyek1GSjI0aVZAYaUNmYXZAsbjdhYkpVc0tRY0lFY1I3NG1hX2M2X2d1bEpXUTE5c2lkTGdRWEJYa1dtUwZDZD",
+        current:" https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&access_token=IGQVJWeEZAta1ZARRHg3YzI5NzNJS3pjLXE0QmxlYVpQSTZATdFRSOS1seDBjYnpGMjY3Sk5Pc0R2LWQ5OVFVTGlCTUZAvWFJFRmtXZAjJOdmNJNjdYb0Jqd2JucXVMVjlPbGcwXy04bjRreGYwWEItRm0zRgZDZD",
+        // current:"https://graph.instagram.com/v11.0/5871478969560922/media?fields=caption,id,media_type,media_url&access_token=IGQVJWVFlLbkdUWkVGMklFZA2hWNTJMdXFfRk40a0NhUXVfaXR4ZAnVZAaHo5YURYUWtKMFA0dzJyek1GSjI0aVZAYaUNmYXZAsbjdhYkpVc0tRY0lFY1I3NG1hX2M2X2d1bEpXUTE5c2lkTGdRWEJYa1dtUwZDZD",
         next:''
 
     }
