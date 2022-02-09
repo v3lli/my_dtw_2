@@ -1,27 +1,31 @@
 <template>
   <div>
-    <FullScrNav2 class="nav" :toNav="!showNav"/>
+    <FullScrNav class="nav" :toNav="!showNav"/>
   </div>
   <router-view/>
 </template>
 
 <script>
-import FullScrNav2 from '@/components/FullScrNav2.vue';
+import FullScrNav from '@/components/FullScrNav.vue';
 //import gsap from 'gsap'
 
 export default {
   data: () => {
     return{
       mobileView: false,
+      scrollView: false,
     }
   },
   methods:{
     viewhandler(){
       this.mobileView = window.innerWidth <= 990;
       },
+    scrollhandler(){
+      this.scrollView = (window.scrollY) > 200;
+    },
   },
   components: {
-    FullScrNav2,
+    FullScrNav,
   },
   created(){
     this.viewhandler();

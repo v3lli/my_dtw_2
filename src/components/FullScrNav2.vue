@@ -15,30 +15,20 @@
         <li @mouseenter="showCollectionSubmenu"  @mouseleave="hideCollectionSubmenu" >
           <a v-if="hideCollection" class="nav-link" href="#">Collections</a>
           <ul v-if="showCollection" class="sub my-auto d-flex flex-column align-items-center w-100">
+                <li class="mx-auto"><a class="mx-auto" href="">See All</a></li>
                 <li class="mx-auto"><a class="mx-auto" href="">Halo</a></li>
                 <li><a href="" class="mx-auto">Soldier Come, Soldier Go</a></li>
-                <li><a href="" class="mx-auto">Painted Eyes Licked Clean</a></li>
-                <li><a href="" class="mx-auto">How they See Us</a></li>
+                <li><a href="" class="mx-auto">Utero</a></li>
             </ul>
         </li>
-        <li @mouseenter="showPublicationSubmenu"  @mouseleave="hidePublicationSubmenu" >
-          <a v-if="hidePublication" class="nav-link" href="#">Publications</a>
-          <ul v-if="showPublication" class="sub mx-auto d-flex flex-column justify-content-center align-items-center">
-                <li><a href="" class="mx-auto">Utero</a></li>
-                <li><a href="" class="mx-auto">27</a></li>
-                <li><a href="" class="mx-auto">Demon Days</a></li>
-            </ul>
+        <li>
+          <a class="nav-link" aria-current="page" href="#">About</a>
         </li>
         <li>
           <a class="nav-link" href="#">Diary</a>
         </li>
-        <li @mouseenter="showContactSubmenu"  @mouseleave="hideContactSubmenu">
-          <a v-if="hideContact" class="nav-link" href="#">Contact</a>
-          <ul v-if="showContact" class="sub mx-auto d-flex flex-column justify-content-center align-self-center">
-                <li><a href="" class="mx-auto">Instagram</a></li>
-                <li><a href="" class="mx-auto">FaceBook</a></li>
-                <li><a href="" class="mx-auto">Twitter</a></li>
-            </ul>
+        <li>
+          <a class="nav-link" aria-current="page" href="#">Contact</a>
         </li>
         <li>
           <a class="nav-link" href="#">Blog</a>
@@ -71,8 +61,6 @@ export default {
       showPublication: false,
       hidePublication: true,
 
-      showContact: false,
-      hideContact: true,
     };
   },
   methods: {
@@ -98,14 +86,6 @@ export default {
     hidePublicationSubmenu(){
         this.showPublication = false;
         this.hidePublication = true;
-    },
-    showContactSubmenu(){
-        this.showContact = true;
-        this.hideContact = false;
-    },
-    hideContactSubmenu(){
-        this.showContact = false;
-        this.hideContact = true;
     },
     togglePublication: function (){
         this.publicationMenu = !this.publicationMenu;

@@ -37,9 +37,9 @@
 <style scoped>
 .main-header
 {
-    height: 70px;
+    height: 30px;
     width: 100%;
-    padding: 3.5rem;
+    padding: 3rem;
     z-index:2;
     background-color: transparent;
     /* background: rgba(14, 13, 13, 0.43); */
