@@ -38,7 +38,7 @@ export default {
             }
         ],
         posts:null,
-        current:"https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&access_token=IGQVJYR2ZAxMGZAkOVVBLXNXbHIxc1M4Q3FCYWk1RGtXS3I4d0Q2WVVrWk54MEJRV1gtcVFSaTRfczdIaUJDMGhRMWhrd1BmcElzeDJtdnZANZAzNaTWZAndXROcDBFWk8tampjY0E1RWhUQXVXUGNIZAU5xVwZDZD",
+        current:"https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&access_token=IGQVJVWmFxbEJSQzVtdUdaSDBmY0xteG1GUUxjVTJKemExTURMLTdNclVUVXNXNnN1cTBOaThobEJYMmxDRVhrZAWdtNmZACUXZAGMFc3cUF3cmtoWDdlRTMyYkJDcmgyekNtY2lKRVhDSFN0VGxTSTZAXcQZDZD",
         next:''
 
     }
